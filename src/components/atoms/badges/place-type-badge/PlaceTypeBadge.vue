@@ -11,10 +11,6 @@
 <script>
 import { hashId } from '@/utils/generators'
 
-const validator = {
-  types: ['A', 'C', 'D', 'T'],
-}
-
 const placeTypes = {
   a: {
     name: 'Airport',
@@ -44,15 +40,16 @@ export default {
     placeType: {
       type: String,
       required: true,
-      validator: (value) => validator.types.includes(value),
     },
   },
   computed: {
     placeThemeClass: function () {
-      return placeTypes[this.placeType.toLowerCase()].theme
+      if (placeTypes[this.placeType.toLowerCase()]) return placeTypes[this.placeType.toLowerCase()].theme
+      return 'bg-gray-200'
     },
     placeName: function () {
-      return placeTypes[this.placeType.toLowerCase()].name
+      if (placeTypes[this.placeType.toLowerCase()]) return placeTypes[this.placeType.toLowerCase()].name
+      return this.placeType
     },
   },
 }

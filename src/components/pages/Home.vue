@@ -236,10 +236,10 @@ export default {
     setPickUpLocation(e) {
       // Close search
       this.showResults = false
-      const airportAbbr = e.iata ? `(${e.iata})` : ''
-
+      const airportAbbr = e.iata ? ` (${e.iata})` : ''
+      const city = e.city ? `${e.city},` : ''
       // Fill Input with the value
-      this.searchQuery = `${e.name} ${airportAbbr}, ${e.city}, ${e.country}`
+      this.searchQuery = `${e.name}${airportAbbr}, ${city} ${e.country}`
     },
     handleSearchFocus: function (e) {
       if (e.type === 'focusin' && !this.hasNoResults) this.showResults = true

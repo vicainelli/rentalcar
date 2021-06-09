@@ -43,4 +43,14 @@ describe('PlaceTypeBadge', () => {
     expect(el).toHaveTextContent('Station')
     expect(el).toHaveClass('bg-gray-800')
   })
+  it('render default place badge for unknown place', () => {
+    const id = hashId(6)
+    render(PlaceTypeBadge, { props: { id: `place_type_badge_unknown_${id}`, placeType: 'Z' } })
+
+    const el = screen.getByTestId(`place_type_badge_unknown_${id}`)
+
+    expect(el).toBeInTheDocument()
+    expect(el).toHaveTextContent('Z')
+    expect(el).toHaveClass('bg-gray-200')
+  })
 })
