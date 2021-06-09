@@ -66,7 +66,7 @@
                 >
                   <icon name="navigation" />
                   <input
-                    aria-label="Search pick-up location"
+                    aria-label="Pick-up Location"
                     data-test-id="search_location"
                     class="w-full mx-2 focus:outline-none border-0"
                     type="text"
