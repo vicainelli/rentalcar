@@ -6,18 +6,15 @@ const state = {
   locations: [],
 }
 
-const getters = {
-  // getProducts: (state) => state.location,
-  // getIsLoading: (state) => state.isLoading,
-}
+const getters = {}
 
 const actions = {
   fetchLocation: async ({ commit }, payload) => {
-    const { term, prefLang, cor, domain } = payload
+    const { term, solrRows } = payload
     commit('SET_NO_RESULTS', true)
     commit('SET_LOADING', true)
     return await location
-      .getAll(term, prefLang, cor, domain)
+      .getAll(term, solrRows)
       .then((res) => {
         if (res.results.numFound >= 1) {
           commit('SET_NO_RESULTS', false)

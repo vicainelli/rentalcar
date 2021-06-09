@@ -9,7 +9,7 @@ describe('Location Autocomplete API', () => {
     axios.get.mockResolvedValue({
       data: locationsMock,
     })
-    const result = await location.getAll('ams', 'en', 'NL', 'rc.com')
+    const result = await location.getAll('ams', 6)
     expect(result).toEqual(locationsMock)
     expect(axios.get).toHaveBeenCalledTimes(1)
   })

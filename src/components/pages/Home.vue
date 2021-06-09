@@ -227,7 +227,7 @@ export default {
         const queryTermSize = self.searchQuery.split('').length
         if (queryTermSize >= 2) {
           self.showResults = true
-          return self.fetchLocation({ term: self.searchQuery, prefLang: 'en', cor: 'NL', domain: 'rc.com' })
+          return self.fetchLocation({ term: self.searchQuery, solrRows: 6 })
         }
         self.showResults = false
         self.updateHasNoResultStatus(false)
