@@ -1,0 +1,131 @@
+{
+  "isGooglePowered": false,
+  "docs": [
+    {
+      "country": "Netherlands",
+      "lng": 4.7641,
+      "city": "Amsterdam",
+      "searchType": "L",
+      "alternative": [
+        "NL,Schiphol"
+      ],
+      "index": 1,
+      "bookingId": "airport-18491",
+      "placeType": "A",
+      "placeKey": "1472510",
+      "iata": "AMS",
+      "countryIso": "nl",
+      "locationId": "18491",
+      "name": "Amsterdam Schiphol Airport",
+      "ufi": 900038538,
+      "isPopular": true,
+      "region": "Noord-Holland",
+      "lang": "en",
+      "lat": 52.3113
+    },
+    {
+      "country": "Netherlands",
+      "lng": 4.893,
+      "searchType": "L",
+      "alternative": [
+        "NL"
+      ],
+      "index": 2,
+      "bookingId": "city-1770968",
+      "placeType": "C",
+      "placeKey": "887321",
+      "countryIso": "nl",
+      "locationId": "10746",
+      "name": "Amsterdam",
+      "ufi": -2140479,
+      "isPopular": false,
+      "region": "Noord-Holland",
+      "lang": "en",
+      "lat": 52.3729
+    },
+    {
+      "country": "Austria",
+      "lng": 14.8667,
+      "searchType": "L",
+      "alternative": [
+        "AT,Mostviertel"
+      ],
+      "index": 3,
+      "bookingId": "city-122877",
+      "placeType": "C",
+      "placeKey": "24110",
+      "countryIso": "at",
+      "locationId": "1676",
+      "name": "Amstetten",
+      "ufi": -1974003,
+      "isPopular": false,
+      "region": "Lower Austria",
+      "lang": "en",
+      "lat": 48.1167
+    },
+    {
+      "country": "Netherlands",
+      "lng": 4.90458,
+      "city": "Amsterdam",
+      "searchType": "G",
+      "alternative": [
+        "NL"
+      ],
+      "index": 4,
+      "bookingId": "district-146",
+      "placeType": "D",
+      "placeKey": "1469698",
+      "countryIso": "nl",
+      "locationId": "-1",
+      "name": "Amsterdam Noord",
+      "ufi": -2140479,
+      "isPopular": false,
+      "region": "Noord-Holland",
+      "lang": "en",
+      "lat": 52.3887
+    },
+    {
+      "country": "Netherlands",
+      "lng": 4.8932,
+      "city": "Amsterdam",
+      "searchType": "G",
+      "alternative": [
+        "NL"
+      ],
+      "index": 5,
+      "bookingId": "district-145",
+      "placeType": "D",
+      "placeKey": "1469697",
+      "countryIso": "nl",
+      "locationId": "-1",
+      "name": "Amsterdam City Centre",
+      "ufi": -2140479,
+      "isPopular": false,
+      "region": "Noord-Holland",
+      "lang": "en",
+      "lat": 52.3706
+    },
+    {
+      "country": "Netherlands",
+      "lng": 4.85488,
+      "city": "Amsterdam",
+      "searchType": "G",
+      "alternative": [
+        "NL"
+      ],
+      "index": 6,
+      "bookingId": "district-148",
+      "placeType": "D",
+      "placeKey": "1469709",
+      "countryIso": "nl",
+      "locationId": "-1",
+      "name": "De Baarsjes",
+      "ufi": -2140479,
+      "isPopular": false,
+      "region": "Noord-Holland",
+      "lang": "en",
+      "lat": 52.3679
+    }
+  ],
+  "numFound": 140
+}

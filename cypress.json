@@ -1,0 +1,5 @@
+{
+  "viewportWidth": 460,
+  "viewportHeight": 660,
+  "pluginsFile": "tests/e2e/plugins/index.js"
+}
