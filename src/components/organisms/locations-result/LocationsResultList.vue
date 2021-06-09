@@ -7,7 +7,7 @@
       <li
         v-for="(location, index) in locations"
         :key="index"
-        class="p-2"
+        class="p-2 hover:bg-blue-100 cursor-pointer"
         :class="{ 'border-b border-gray-300': index != locations.length - 1 }"
         @click="$emit('click', location)"
       >
