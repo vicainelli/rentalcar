@@ -180,11 +180,16 @@
         </div>
       </div>
     </div>
+
+    <app-brand-section />
+    <app-features-section />
   </div>
 </template>
 
 <script>
 import AppHeader from '../templates/layout/AppHeader'
+import AppBrandSection from '../templates/layout/AppBrandSection'
+import AppFeaturesSection from '../templates/layout/AppFeaturesSection'
 import Icon from '../atoms/icon/Icon.vue'
 import { Spinner } from '../atoms/loading'
 import LocationsResultList from '../organisms/locations-result/LocationsResultList'
@@ -194,6 +199,8 @@ export default {
   name: 'home',
   components: {
     'app-header': AppHeader,
+    'app-brand-section': AppBrandSection,
+    'app-features-section': AppFeaturesSection,
     icon: Icon,
     'locations-result-list': LocationsResultList,
     'loading-spinner': Spinner,
