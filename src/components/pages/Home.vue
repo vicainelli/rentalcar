@@ -76,7 +76,6 @@
                     v-model="searchQuery"
                     @keyup="searchLocation"
                     @focusin="handleSearchFocus"
-                    @focusout="handleSearchFocus"
                   />
                   <div class="w-6 h-6" v-if="isLoading"><loading-spinner size="sm" /></div>
                 </div>
@@ -231,11 +230,11 @@ export default {
       // Close search
       this.showResults = false
       const airportAbbr = e.iata ? `(${e.iata})` : ''
+
       // Fill Input with the value
       this.searchQuery = `${e.name} ${airportAbbr}, ${e.city}, ${e.country}`
     },
     handleSearchFocus: function (e) {
-      if (e.type === 'focusout') this.showResults = false
       if (e.type === 'focusin' && !this.hasNoResults) this.showResults = true
     },
   },

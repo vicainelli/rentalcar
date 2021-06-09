@@ -8,7 +8,7 @@
         />
       </div>
       <div>
-        <div class="text-sm location-title">{{ location.name }} {{ iata ? `(${iata})` : '' }}</div>
+        <div class="text-sm location-title">{{ locationTitle }}</div>
         <div class="text-xs location-subtext">
           {{ locationSubText }}
         </div>
@@ -29,6 +29,10 @@ export default {
     },
   },
   computed: {
+    locationTitle: function () {
+      const iata = this.location.iata ? `(${this.location.iata})` : ''
+      return `${this.location.name} ${iata}`
+    },
     locationSubText: function () {
       const city = this.location.city ? `${this.location.city}, ` : ''
       const region = this.location.region ? `${this.location.region}, ` : ''

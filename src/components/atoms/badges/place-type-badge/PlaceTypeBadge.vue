@@ -12,7 +12,7 @@
 import { hashId } from '@/utils/generators'
 
 const validator = {
-  types: ['A', 'C', 'D', 'S'],
+  types: ['A', 'C', 'D', 'T'],
 }
 
 const placeTypes = {
@@ -28,7 +28,7 @@ const placeTypes = {
     name: 'District',
     theme: 'bg-rental-green-500',
   },
-  s: {
+  t: {
     name: 'Station',
     theme: 'bg-gray-800',
   },

@@ -35,7 +35,7 @@ describe('PlaceTypeBadge', () => {
   })
   it('render place badge for Station', () => {
     const id = hashId(6)
-    render(PlaceTypeBadge, { props: { id: `place_type_badge_station_${id}`, placeType: 'S' } })
+    render(PlaceTypeBadge, { props: { id: `place_type_badge_station_${id}`, placeType: 'T' } })
 
     const el = screen.getByTestId(`place_type_badge_station_${id}`)
 

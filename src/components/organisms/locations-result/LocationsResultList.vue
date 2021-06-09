@@ -5,8 +5,8 @@
     </div>
     <ul v-else data-test-id="locations_results_list">
       <li
-        v-for="location in locations"
-        :key="location.bookingId"
+        v-for="(location, index) in locations"
+        :key="index"
         class="p-2"
         :class="{ 'border-b border-gray-300': index != locations.length - 1 }"
         @click="$emit('click', location)"
