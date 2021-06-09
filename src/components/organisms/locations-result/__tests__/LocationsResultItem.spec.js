@@ -31,7 +31,7 @@ describe('LocationsResultItem', () => {
     })
     expect(screen.getByTestId(`location_item_${location.bookingId}`)).toBeInTheDocument()
     expect(screen.getByTestId(`place_type_badge_${location.placeType}_${location.bookingId}`)).toBeInTheDocument()
-    expect(screen.getByText(location.name)).toBeInTheDocument()
+    expect(screen.getByText(`${location.name} (${location.iata})`)).toBeInTheDocument()
     expect(screen.getByText(`${location.city}, ${location.region}, ${location.country}`)).toBeInTheDocument()
   })
 })
